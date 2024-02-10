@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Check</title>
+</head>
+<body>
+
+<h2>Enter the password to proceed:</h2>
+<input type="password" id="passwordInput">
+<button onclick="checkPassword(event)">Submit</button>
+
+<script>
+function checkPassword(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+    var enteredPassword = document.getElementById("passwordInput").value;
+    var correctPassword = "69";
+
+    if (enteredPassword === correctPassword) {
+        window.location.href = "https://adityasuryawanshi7.github.io/heart/";
+    } else {
+        alert("Incorrect password. Please try again.");
+    }
+}
+</script>
+
+</body>
+</html>
